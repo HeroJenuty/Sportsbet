@@ -1,6 +1,6 @@
 .promo-banner {
     flex: 1;
-    background-color: theme-color("section-bg");
+    background-color: theme-color("primary");
     border-radius: $border-radius-xxlg;
     position: relative;
     box-shadow: $card-box-shadow;
@@ -19,18 +19,18 @@
         text-transform: uppercase;
         font-size: $font-size-lg;
         font-weight: $font-weight-bold;
-        color: color-yiq(theme-color("section-bg"));
+        color: color-yiq(theme-color("action"));
     }
 
     .promo-description {
-        color: rgba(color-yiq(theme-color("section-bg")), .7);
+        color: rgba(color-yiq(theme-color("action")), .7);
     }
 
     .promo-button {
-        @include gradient-x(theme-color("primary-dark"), theme-color("primary"), 0%, 100%);
-        color: color-yiq(theme-color("primary-dark"));
+        @include gradient-x(theme-color("action"), theme-color("action"), 0%, 100%);
+        color: color-yiq(theme-color("action"));
         &:hover {
-            @include gradient-x(lighten(theme-color("primary-dark"), 3%), lighten(theme-color("primary"), 3%), 0%, 100%);
+            @include gradient-x(lighten(theme-color("action"), 3%), lighten(theme-color("action"), 3%), 0%, 100%);
         }
     }
 

@@ -1,0 +1,38 @@
+.header-logos{
+    color:theme-color("section-bg");
+    
+    .partner{
+        float: left;
+        margin-right: 17px;
+        font-size: 0.75rem;
+        line-height: 1rem;
+    }
+    .sponsor{
+        float: right;
+        font-size: 0.75rem;
+        line-height: 1rem;
+        border-right: 1px solid rgb(107, 109, 107);
+        border-left: 1px solid rgb(107, 109, 107);
+        
+    }
+    .fa-chess-rook{
+        margin-right: 10px;
+    }
+    .fa-shield-alt{
+        margin-right: 10px;
+    }
+}
+
+.login-buttons{
+    margin-bottom: 2rem;
+    .register-button{
+        margin-left: 1rem;
+        background-color: theme-color("action");
+        height: 45px;
+        width: 10rem;
+    }
+    .signin-button{
+        height: 45px;
+        width: 10rem;
+    }
+}

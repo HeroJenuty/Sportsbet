@@ -6,8 +6,8 @@ import {
   Nav,
   NavItem,
   NavLink,
+  Dropdown,
 } from 'reactstrap';
-import { NavLink as RRNavLink } from 'react-router-dom';
 
 const HeaderNavbar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,28 +16,33 @@ const HeaderNavbar = (props) => {
 
   return (
     <Navbar color="dark" dark expand="md">
-        <div className="container">
-            <NavbarToggler onClick={toggle} />
-            <Collapse isOpen={isOpen} navbar>
-            <Nav className="mr-auto" navbar>
-                <NavItem>
-                    <NavLink 
-                    tag={RRNavLink} 
-                    exact 
-                    to="/" 
-                    activeClassName="active"
-                    >Home</NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink 
-                     tag={RRNavLink} 
-                     to="/gallery"
-                     activeClassName="active"
-                    >Gallery</NavLink>
-                </NavItem>
-            </Nav>
-            </Collapse>
-        </div>
+      <div className="container">
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
+          <Nav className="navbar " navbar>
+            <div className="row d-flex justify-content-between">
+              <div className="col d-flex">
+                <div className="nav-title d-flex">
+                  Sportsbet.io
+                   </div>
+              </div>
+              <div className="col d-flex">
+                <div class="dropdown">
+                  <button className="btn btn-primary  dropdown-toggle">
+                    English</button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item">Bulgarian</a>
+                    <a class="dropdown-item">Spanish action</a>
+                    <a class="dropdown-item">Japanese</a>
+                    <a class="dropdown-item">Korean</a>
+                    <a class="dropdown-item">Russian</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Nav>
+        </Collapse>
+      </div>
     </Navbar>
   );
 }

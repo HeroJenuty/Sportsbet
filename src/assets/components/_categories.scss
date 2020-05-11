@@ -1,0 +1,31 @@
+.card-title{
+    text-align: center;
+    color: theme-color("section-bg");
+    margin-top: 4px;
+}
+
+.card{
+    background-color: theme-color("primary");
+    color: theme-color("section-bg");
+    height: 100%;
+    width: 100%;
+}
+
+.fa-futbol{
+    color: red;
+}
+.fa-basketball-ball{
+    color: orange;
+}
+.fa-table-tennis{
+    color: rgb(37, 201, 201);
+}
+.fa-gamepad{
+    color: plum;
+}
+.fa-football-ball{
+    color: burlywood;
+}
+.fa-hockey-puck{
+    color: rgb(13, 71, 146);
+}

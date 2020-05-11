@@ -1,6 +1,8 @@
 import React from 'react';
 import MainSection from '../components/MainSection';
 import PromoContainer from '../components/promo-banner/PromoContainer';
+import HeaderLogo from '../components/HeaderLogo';
+import Categories from '../components/Categories';
 
 class Home extends React.Component {
 
@@ -9,12 +11,20 @@ class Home extends React.Component {
         return <>
             <div className="row">
                 <div className="col">
-                    <MainSection/>
+                    <HeaderLogo />
                 </div>
             </div>
             <div className="row">
                 <div className="col">
-                    <PromoContainer/>
+                    <PromoContainer />
+                </div>
+            </div>
+            <div className="sport-categories">
+                Sport Categories
+            </div>
+            <div className="row">
+                <div className="col">
+                    <Categories />
                 </div>
             </div>
         </>
@@ -26,4 +36,3 @@ class Home extends React.Component {
 export default Home;
 
 
- 
