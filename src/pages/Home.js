@@ -3,6 +3,7 @@ import MainSection from '../components/MainSection';
 import PromoContainer from '../components/promo-banner/PromoContainer';
 import HeaderLogo from '../components/HeaderLogo';
 import Categories from '../components/Categories';
+import Popular from '../components/Popular';
 
 class Home extends React.Component {
 
@@ -25,6 +26,11 @@ class Home extends React.Component {
             <div className="row">
                 <div className="col">
                     <Categories />
+                </div>
+            </div>
+            <div className="row">
+                <div className="col">
+                    <Popular />
                 </div>
             </div>
         </>
