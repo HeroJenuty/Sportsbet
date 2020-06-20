@@ -17,6 +17,9 @@
 // Load Bootstrap
 @import "~bootstrap/scss/bootstrap";
 
+//Load Mixins
+@import "components/mixins";
+
 
 // // Bootstrap components override
 @import "bootstrap-components/navbar";
@@ -34,4 +37,4 @@
 @import "components/navbar";
 @import "components/home";
 @import "components/categories";
-@import "components/carousel";
+@import "components/game.scss";

@@ -29,3 +29,26 @@
 .fa-hockey-puck{
     color: rgb(13, 71, 146);
 }
+
+.sport-items-container{
+    @include scrollbars(.5em, slategray);
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    .sport-item{
+        flex: 0 0 100px;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba($color: #000000, $alpha: 0.1);
+        border-radius: 0.5rem;
+        justify-content: center;
+        
+
+        .card-title{
+            margin-bottom: 0;
+        }
+        +.sport-item{
+            margin-left: 0.5rem;
+        }
+    }
+}
+

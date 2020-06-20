@@ -28,7 +28,7 @@ class Home extends React.Component {
                     <Categories />
                 </div>
             </div>
-            <div className="row">
+            <div className="row mt-5">
                 <div className="col">
                     <Popular />
                 </div>
